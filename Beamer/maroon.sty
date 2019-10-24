@@ -1,0 +1,90 @@
+\usetheme{Rochester}
+
+\RequirePackage{pgf}
+\RequirePackage{fancybox}
+\RequirePackage{amsmath,amssymb}
+
+% use palatio font + eular math
+%\RequirePackage{pxfonts}
+\RequirePackage{eulervm}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+
+
+% XeTeX load
+%\RequirePackage{fontspec} 
+%\RequirePackage{xunicode}
+%\RequirePackage{xltxtra}
+% Specifiy XeTeX font
+%\RequirePackage{Times New Roman}
+
+% minimize the interface
+\useoutertheme[subsection=false]{miniframes}
+% bolden the titleline
+\usefonttheme[onlylarge]{structurebold}
+\pgfdeclareimage[width=5.0\paperwidth]{oxygen-header}{oxygen-header}
+% close the block shadow
+\setbeamertemplate{blocks}[shadow=false] 
+% the blocks with rounded corner and shadow or not
+\setbeamercovered{transparent}
+
+\beamer@headheight=0.13\paperwidth
+
+\definecolor{maroon}{HTML}{782F40}
+%{5E1015}
+\definecolor{gold}{HTML}{CEB888}
+%{F9BF3F}
+\definecolor{intelpurple}{HTML}{1172C3}
+\definecolor{intelblue}{HTML}{2C78B4}
+\definecolor{intelllightgray}{HTML}{F0F0F0}
+\definecolor{intelitem}{HTML}{0083F0}
+\definecolor{oxygengray}{HTML}{463E3F}
+
+
+\setbeamercolor*{Title bar}{fg=black}
+\setbeamercolor*{Location bar}{fg=maroon,bg=gold}
+\setbeamercolor*{frametitle}{parent=Title bar}
+\setbeamercolor*{block title}{bg=maroon,fg=gold}
+\setbeamercolor*{block body}{bg=intelllightgray,fg=black}
+\setbeamercolor*{normal text}{bg=white,fg=black}
+\setbeamercolor*{section in head/foot}{bg=maroon,fg=gold}
+\setbeamercolor{item}{fg=maroon}
+
+\usecolortheme[named=maroon]{structure}
+
+\newcommand{\heading}[1]{
+  \begin{center}
+    \large\bf
+	{\color{maroon} \shadowbox{#1}}
+  \end{center}
+\vspace{-8ex minus 1ex}}
+
+
+\setbeamerfont{section in head/foot}{size=\tiny,series=\normalfont}
+\setbeamerfont{frametitle}{size=\Large}
+
+
+%\setbeamertemplate{headline}
+\setbeamertemplate{frametitle}
+{
+  \vskip0.6\beamer@headheight   % hight of the headline
+  \vskip-\baselineskip
+  \vskip-0.2cm  % whole position of the headline and the text
+  \hskip-0.6cm\usebeamerfont{frametitle}\insertframetitle
+  \vskip-1em  % this is the distance between text and headling
+  \hskip-0.6cm\usebeamerfont*{framesubtitle}\insertframesubtitle
+}
+
+
+\setbeamertemplate{footline}
+{
+  \linethickness{0.25pt}
+  \framelatex{   % ht in the next line is the margin of footline text to the upper bound
+  \begin{beamercolorbox}[leftskip=.3cm,wd=\paperwidth,ht=0.28\beamer@headheight,sep=0.1cm]{Location bar}
+    \usebeamerfont{section in head/foot}%
+    \insertshortauthor~|~\insertshorttitle
+    \hfill
+    \insertframenumber/\inserttotalframenumber
+  \end{beamercolorbox}}
+}
+
