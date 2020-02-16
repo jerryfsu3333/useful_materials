@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[hmargin={1in, 1in}, vmargin={0.7in, 1in}]{geometry}
+\usepackage{Mylatex}
+\linespread{1.25} 
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+	
+\title{}
+\date{}
+
+\begin{document}
+
+%% remove page number
+\pagestyle{empty}
+
+%% logo
+\begin{wrapfigure}[4]{l}{0.25\textwidth}
+    \centering
+    \includegraphics[scale=1.3]{fsulogo.pdf}
+\end{wrapfigure}
+
+%% Address
+{\setstretch{1}
+    Department of Statistics
+
+    117 N. Woodward Avenue
+
+    P.O. Box 3064330
+
+    Tallahassee, Florida 32306-4330\par
+}
+
+\vspace{2em}
+
+Dear Editors of \textsl{Annals of Statistics},
+
+I would like to submit the manuscript, ``Subspace Estimation with Dimension and Variable Selection in Sufficient Dimension Reduction'' by Zeng, myself and Zhang, for possible publication in \textsl{Annals of Statistics}. 
+
+Sufficient dimension reduction (SDR) methods target at finding lower-dimensional representations of a multivariate predictor $\mathbf{X}\in\mbbR^p$ such that all the information about the conditional distribution of $Y\mid \mathbf{X}$ is preserved. The reduction is commonly achieved by projecting the predictor onto a low-dimensional subspace  $\calS\subseteq\mbbR^p$. The smallest such subspace is known as the Central Subspace (CS), and is the key parameter of interest for most SDR methods. In this article, we propose a unified and flexible framework for estimating the CS in high dimensions. Our approach generalizes a wide range of model-based and model-free SDR methods to high-dimensional settings, where the CS is assumed to involve only a subset of the predictors for interpretability. We formulate the problem as a quadratic convex optimization so that the global solution is feasible. The proposed estimation procedure simultaneously achieves the structural dimension selection and coordinate-independent variable selection of the CS.  Theoretically, our method achieves {both dimension selection and subspace estimation consistency} under mild conditions. We also demonstrate the effectiveness and efficiency of our method with extensive simulation studies and real data examples.
+
+We confirm that this manuscript has not been published elsewhere and is not under consideration by another journal. Many thanks in advance for your consideration!
+
+Sincerely,
+\vspace{-3mm}
+
+Qing Mai (\href{mailto:mai@stat.fsu.edu}{mai@stat.fsu.edu})
+\vspace{-3mm}
+
+Cc: Jing Zeng (\href{mailto:jing.zeng@stat.fsu.edu}{jing.zeng@stat.fsu.edu}), Xin Zhang (\href{mailto:henry@stat.fsu.edu}{henry@stat.fsu.edu})
+\vspace{-3mm}
+
+Enclosures
+
+\end{document}

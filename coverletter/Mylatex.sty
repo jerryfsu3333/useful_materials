@@ -1,37 +1,20 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %% Require packages
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \RequirePackage{algorithm}
-% \RequirePackage{fullpage}
-% \RequirePackage[pdftex]{graphicx}
-% \RequirePackage{hyperref}
-% \RequirePackage{graphicx}
-% \RequirePackage{booktabs} 
-% \RequirePackage{mathrsfs}
-% \RequirePackage{amsmath}
-% \RequirePackage{amsthm}
-% \RequirePackage{tcolorbox}
-% \RequirePackage{float}
-% \RequirePackage{booktabs}
-% \RequirePackage{threeparttable}
-% \RequirePackage{amsfonts}
-% \RequirePackage{graphicx}
-% \RequirePackage{stmaryrd}
-% \RequirePackage[round]{natbib}
-% \RequirePackage{bm}% Bold Math package
-% \RequirePackage{MnSymbol}% perpendicular symbol
-% \RequirePackage{multirow}
-% \RequirePackage{multicol}
-% \RequirePackage{enumerate}
-% \RequirePackage[small]{caption}
-% \RequirePackage[small]{titlesec}
+\RequirePackage[pdftex]{graphicx}
+\RequirePackage{hyperref}
+\RequirePackage{graphicx}
+\RequirePackage{mathrsfs}
+\RequirePackage{amsmath,amsthm,amsfonts}
+\RequirePackage{bm}% Bold Math package
+\RequirePackage{wrapfig}
+\RequirePackage{setspace}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \newcommand{\bmmax}{3}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Definitions
@@ -446,19 +429,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% \newtheorem
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newtheorem{pn}{{\bf Proposition}}
-\newtheorem{lem}{{\bf Lemma}}
-\newtheorem{cy}{{\bf Corollary}}
-\newtheorem{defi}{{\bf Definition}}
-\newtheorem{thm}{{\bf Theorem}}
-\newtheorem{proposition}{{\bf Proposition}}
-\newtheorem{lemma}{{\bf Lemma}}
-\newtheorem{corollary}{{\bf Corollary}}
-\newtheorem{assumption}{{\bf Assumption}}
-\newtheorem{definition}{{\bf Definition}}
-\newtheorem{theorem}{{\bf Theorem}}
-\newtheorem{example}{{\bf Example}}
-\newtheorem{remark}{{\bf Remark}}
+% \theoremstyle{plain}
+% \newtheorem{pn}{{\bf Proposition}}
+% \newtheorem{lem}{{\bf Lemma}}
+% \newtheorem{cy}{{\bf Corollary}}
+% \newtheorem{defi}{{\bf Definition}}
+% \newtheorem{thm}{{\bf Theorem}}
+% \newtheorem{proposition}{{\bf Proposition}}
+% \newtheorem{lemma}{{\bf Lemma}}
+% \newtheorem{corollary}{{\bf Corollary}}
+% \newtheorem{assumption}{{\bf Assumption}}
+% \newtheorem{definition}{{\bf Definition}}
+% \newtheorem{theorem}{{\bf Theorem}}
+% \newtheorem{example}{{\bf Example}}
+% \newtheorem{remark}{{\bf Remark}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% other
@@ -472,6 +456,7 @@
 \DeclareMathOperator*{\argmin}{argmin}
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 \newcommand{\spnn}[1]{\ensuremath{\mathrm{span}\left(#1\right)}}
+\newcommand{\rank}[1]{\ensuremath{\mathrm{rank}\left(#1\right)}}
 \global\long\def\CS{\calS_{Y\mid\mbX}}
 \global\long\def\subg{\mathrm{subG}}
 \global\long\def\sube{\mathrm{subE}}
